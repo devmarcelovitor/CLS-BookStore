@@ -1,33 +1,51 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+### Segredos e configurações locais ###
+.env
+.env.*
+!.env.example
+application-local.yaml
+application-local.yml
+application-local.properties
+application-secret*.yaml
+application-secret*.yml
+*.pem
+*.key
+*.p12
+*.jks
+*.crt
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+### AWS ###
+.aws/
+credentials
+*.tfstate
+*.tfstate.*
+.terraform/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+### Kubernetes (segredos reais) ###
+*-secret.yaml
+*-secret.yml
+secrets/
+kubeconfig
+*.kubeconfig
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+### Docker (sobrescritas locais) ###
+docker-compose.override.yml
+docker-compose.override.yaml
 
-### VS Code ###
-.vscode/
+### Logs ###
+*.log
+logs/
+*.log.*
+hs_err_pid*
+
+### Sistema operacional ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Outros ###
+*.tmp
+*.bak
+*.swp
+*~
+out/
+.mvn/timing.properties
