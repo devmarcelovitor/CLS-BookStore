@@ -29,7 +29,7 @@ public class BookCopy {
     @Column(nullable = false)
     private LocalDate acquisitionDate;
     @Column(nullable = false)
-    private String conservationState;
+    private ConservationStates conservationState;
     @Column(nullable = false)
     private BigDecimal purchaseCost;
 
