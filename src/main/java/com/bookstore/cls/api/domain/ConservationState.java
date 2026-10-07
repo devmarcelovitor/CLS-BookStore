@@ -1,6 +1,6 @@
 package com.bookstore.cls.api.domain;
 
-public enum ConservationStates {
+public enum ConservationState {
     NEW,
     GOOD,
     DAMAGE
