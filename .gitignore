@@ -13,6 +13,10 @@ application-secret*.yml
 *.jks
 *.crt
 
+target/
+.idea
+*.iml
+
 ### AWS ###
 .aws/
 credentials
