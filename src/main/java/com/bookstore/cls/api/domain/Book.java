@@ -24,6 +24,10 @@ public class Book {
     @Column(nullable = false)
     private String title;
 
+
+    private String series;
+
+
     @Column(nullable = false)
     private String genre;
 
