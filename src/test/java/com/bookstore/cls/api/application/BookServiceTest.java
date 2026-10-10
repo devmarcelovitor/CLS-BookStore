@@ -52,7 +52,7 @@ class BookServiceTest {
         bookService.create(book);
 
         // use verify(bookRepository).save(book) para confirmar que o save foi chamado uma vez
-        verify(bookRepository, never()).save(any());
+        verify(bookRepository).save(book);
     }
 
 }
